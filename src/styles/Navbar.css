@@ -1,0 +1,17 @@
+.airbnb-nav {
+    background-color: transparent;
+
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    padding: 22px 30px;
+}
+
+.airbnb-nav__list {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.airbnb-nav__logo {
+    margin: 0px;
+}
