@@ -14,9 +14,9 @@ html {
 
 body {
   background-color: white;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
   font-family: "Poppins", sans-serif;
-  margin: 0px auto;
+  margin: 2rem auto;
   width: 550px;
 }
 
