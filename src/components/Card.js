@@ -1,25 +1,37 @@
 import "../styles/Card.css";
-import katiePhoto from "../images/katie-zaferes.png";
 import starIcon from "../images/star-icon.svg";
+import photo from '../images/katie-zaferes.png'
 
-export default function Card() {
+export default function Card(props) {
+  console.log(props)
   return (
     <section className="card-container">
       <div className="card">
         <img
-            className="card__img"
-            src={katiePhoto}
-            alt="katie zaferes usando maiô em uma compretição"
+          className="card__img"
+          // according to the course the solution bellow should work,
+          // but idk why it's not, so I went back to the hard coded 
+          // image for now
+          // src={`../images/${props.img}`}
+          src={photo}
+          alt="katie zaferes usando maiô em uma competição"
         />
         <p className="card__tag">SOLD OUT</p>
         <p className="card__reviews">
-            <img className="card__reviews__star-icon" src={starIcon} alt="ícone de uma estrela vermelha" />
-            5.0
-            <span> (6) · USA</span>
+          <img
+            className="card__reviews__star-icon"
+            src={starIcon}
+            alt="ícone de uma estrela vermelha"
+          />
+          {props.rating}
+          <span>
+            {" "}
+            ({props.reviewCount}) · {props.country}
+          </span>
         </p>
-        <h2 className="card__title">Life lessons with Katie Zaferes</h2>
+        <h2 className="card__title">{props.title}</h2>
         <p className="card__price">
-            <em>From $136</em> / person
+          <em>From ${props.price}</em> / person
         </p>
       </div>
     </section>
