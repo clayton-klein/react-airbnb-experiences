@@ -12,9 +12,10 @@ function App() {
         img={card.coverImg}
         rating={card.stats.rating}
         reviewCount={card.stats.reviewCount}
-        country={card.location}
+        location={card.location}
         title={card.title}
         price={card.price}
+        openSpots={card.openSpots}
       />
     )
   });
