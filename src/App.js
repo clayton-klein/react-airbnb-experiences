@@ -9,13 +9,19 @@ function App() {
     return (
       <Card
         key={card.id}
-        img={card.coverImg}
-        rating={card.stats.rating}
-        reviewCount={card.stats.reviewCount}
-        location={card.location}
-        title={card.title}
-        price={card.price}
-        openSpots={card.openSpots}
+        // instead of passing all of these arguments bellow...
+        
+        // img={card.coverImg}
+        // rating={card.stats.rating}
+        // reviewCount={card.stats.reviewCount}
+        // location={card.location}
+        // title={card.title}
+        // price={card.price}
+        // openSpots={card.openSpots}
+
+        // I'm passing the whole object with all the properties
+        // and refering it in the Card component :)
+        card={card}
       />
     )
   });

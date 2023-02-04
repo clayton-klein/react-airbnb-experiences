@@ -1,11 +1,15 @@
 import "../styles/Card.css";
 
+// Now props receive the "card" object as argument from
+// the Card instance in App.js, then I can access the
+// arguments through it...
 export default function Card(props) {
+  // console.log(props)
   let tagText;
-
-  if (props.openSpots === 0) {
+  // like so...
+  if (props.card.openSpots === 0) {
     tagText = "SOLD OUT";
-  } else if (props.location === "Online") {
+  } else if (props.card.location === "Online") {
     tagText = "ONLINE";
   }
 
@@ -13,7 +17,7 @@ export default function Card(props) {
     <div className="card">
       <img
         className="card__img"
-        src={`./images/${props.img}`}
+        src={`./images/${props.card.coverImg}`}
         alt="alt description here"
       />
       {tagText && <p className="card__tag">{tagText}</p>}
@@ -23,15 +27,15 @@ export default function Card(props) {
           src="./images/star-icon.svg"
           alt="ícone de uma estrela vermelha"
         />
-        {props.rating}
+        {props.card.stats.rating}
         <span>
           {" "}
-          ({props.reviewCount}) · {props.country}
+          ({props.card.stats.reviewCount}) · {props.card.location}
         </span>
       </p>
-      <h2 className="card__title">{props.title}</h2>
+      <h2 className="card__title">{props.card.title}</h2>
       <p className="card__price">
-        <em>From ${props.price}</em> / person
+        <em>From ${props.card.price}</em> / person
       </p>
     </div>
   );
