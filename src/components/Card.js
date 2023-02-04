@@ -1,6 +1,6 @@
 import "../styles/Card.css";
-import starIcon from "../images/star-icon.svg";
-import photo from '../images/katie-zaferes.png'
+// import starIcon from ".  ./images/star-icon.svg";
+// import photo from '../images/katie-zaferes.png'
 
 export default function Card(props) {
   console.log(props)
@@ -12,15 +12,15 @@ export default function Card(props) {
           // according to the course the solution bellow should work,
           // but idk why it's not, so I went back to the hard coded 
           // image for now
-          // src={`../images/${props.img}`}
-          src={photo}
+          src={`./${props.img}`}
+          // src={photo}
           alt="katie zaferes usando maiô em uma competição"
         />
         <p className="card__tag">SOLD OUT</p>
         <p className="card__reviews">
           <img
             className="card__reviews__star-icon"
-            src={starIcon}
+            src='./images/star-icon.svg'
             alt="ícone de uma estrela vermelha"
           />
           {props.rating}

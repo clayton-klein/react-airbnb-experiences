@@ -1,4 +1,3 @@
-import photoGrid from "../images/photo-grid.png";
 import "../styles/Hero.css";
 
 export default function Hero() {
@@ -6,7 +5,7 @@ export default function Hero() {
     <section className="hero">
       <img
         className="hero__img"
-        src={photoGrid}
+        src='./images/photo-grid.png'
         alt="um conjunto de várias imagens"
       ></img>
       <h1 className="hero__title">Online Experiences</h1>
