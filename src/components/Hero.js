@@ -7,7 +7,7 @@ export default function Hero() {
         className="hero__img"
         src='./images/photo-grid.png'
         alt="um conjunto de várias imagens"
-      ></img>
+      />
       <h1 className="hero__title">Online Experiences</h1>
       <p>
         Join unique interactive activities led by one-of-a-kind hosts—all
