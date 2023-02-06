@@ -12,4 +12,4 @@ https://www.figma.com/file/4YjrygFEXOcDp9AAnVFv7o/Airbnb-Experiences?node-id=0%3
 
 ## Resultado:
 
-![screenshot da página do projeto](./react-airbnb-experiences-screenshot)
+![screenshot da página do projeto](./react-airbnb-experiences-screenshot.jpeg)
