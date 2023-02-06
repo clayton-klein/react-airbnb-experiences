@@ -22,6 +22,12 @@ function App() {
         // I'm passing the whole object with all the properties
         // and refering it in the Card component :)
         card={card}
+
+        // Another option would be to spread the card object
+        // like so {...card}, then I could access the props
+        // directly in the component like "props.title" instead of
+        // "props.card.title", but apart from being more verbose
+        // I think it's clearer to specify the object.
       />
     )
   });
