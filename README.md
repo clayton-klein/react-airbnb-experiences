@@ -1,3 +1,8 @@
+**Status: finalizado.**
+<br>
+<br>
+<br>
+
 # React Airbnb Experiences
 
 Este foi o terceiro projeto desenvolvido através do curso **React Course - Beginner's Tutorial for React JavaScript Library [2022]**
